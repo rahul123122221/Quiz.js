@@ -1,5 +1,84 @@
-*{
+/* Reset and box-sizing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #f0f8ff; /* AliceBlue for a soft background */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Darker text for better readability */
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Quiz container styling */
+#quizDiv {
+    width: 50%;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
+}
+
+/* Timer styling */
+.timer {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6347; /* Tomato color for urgency */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Question styling */
+.question {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50; /* Darker shade for better contrast */
+}
+
+/* Options container styling */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Individual option styling */
+.option {
+    width: 46%;
+    padding: 0.75rem;
+    border-radius: 20px;
+    background-color: #3498db; /* Calming blue color */
+    color: #fff;
+    text-align: center;
+    transition: transform 400ms, background-color 400ms, color 400ms;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for options */
+.option:hover {
+    transform: scale(1.05);
+    background-color: #2980b9; /* Slightly darker blue */
+    color: #ecf0f1; /* Lighter text color */
 }
